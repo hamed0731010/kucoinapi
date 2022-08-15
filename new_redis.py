@@ -3,7 +3,10 @@ from redis.commands.json.path import Path
 import json
 import threading
 import  requests
-from convert import  conv
+
+def conv(lst1,lst2):
+    res={lst1[i]:lst2[i] for i in range(0,len(lst1))}
+    return res
 def new_redis():
     base_url = 'https://api.kucoin.com'
     path = '/api/v1/market/allTickers'
