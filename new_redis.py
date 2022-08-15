@@ -24,20 +24,8 @@ def new_redis():
 
 
 
-    
-    #g=rj.jsonset('obj', Path.rootPath(), data)
-    #client1 = redis.ConnectionPool(host='localhost', port=6379)
-    #client1.mset({"key-1":"value1","key2":"value2"})
-    #c=client1.set(1,"hello")
 
 
 
 
-    #g=client1.get("key1")
-    #g1=redis.Redis.execute_command('JSON.SET','abc','.',json.dumps(data))
-    #g=redis.StrictRedis(connection_pool=client1)
-    # client1 = Client(, decode_responses=True)
-    # data=kucoin()
-    # f=open('sample.json')
-    # data=json.load(f)
-    # threading.Timer(10, new_redis()).start()
+

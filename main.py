@@ -6,12 +6,10 @@ from fastapi.params import Depends
 import  threading
 import redis
 import json
-#from kucoin import kucoin
+
 app = FastAPI()
-#obj1=kucoin()
 data=new_redis()
-#f=open('sample.json')
-#data=json.load(f)
+
 
 class Item(BaseModel):
     name: str

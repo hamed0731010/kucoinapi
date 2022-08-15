@@ -3,7 +3,7 @@ import  requests
 
 base_url='https://api.kucoin.com'
 path='/api/v1/market/histories'
-#path='/api/v1/market/allTickers'
+
 
 def kucoin():
 
