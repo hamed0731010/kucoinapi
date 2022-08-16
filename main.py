@@ -19,7 +19,7 @@ class Item(BaseModel):
 
 @app.get("/")
 async def read_status():
-    health_status
+    
     client1 = redis.Redis(host='redis-19031.c232.us-east-1-2.ec2.cloud.redislabs.com', db=0, port=19031,
                           password="4ENg0qBfOv9at2MUvzsMQ8mxXE3NZEvs")
     healthstatus = client1.json().get('person:1')
@@ -28,7 +28,7 @@ async def read_status():
 
 @app.get("/list/")
 async def read_list():
-    list_rate
+   
     client1 = redis.Redis(host='redis-19031.c232.us-east-1-2.ec2.cloud.redislabs.com', db=0, port=19031,
                           password="4ENg0qBfOv9at2MUvzsMQ8mxXE3NZEvs")
     ratelist = client1.get('foo')
