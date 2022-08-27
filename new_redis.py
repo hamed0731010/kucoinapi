@@ -19,7 +19,7 @@ def new_redis():
 def rate_list():
     base_url = 'https://api.kucoin.com'
     path = '/api/v1/market/allTickers'
-    threading.Timer(5.0, new_redis).start()
+    threading.Timer(5.0, rate_list).start()
     u = requests.get(base_url + path)
     re = u.json()
     client1 = redis.Redis(host='redis-19031.c232.us-east-1-2.ec2.cloud.redislabs.com', db=0, port=19031,
